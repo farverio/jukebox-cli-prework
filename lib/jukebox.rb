@@ -26,7 +26,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def play_song(songs_arr)
+def play(songs_arr)
   puts "Please enter a song name or number"
   play_response = gets.chomp
   matching_song = songs_arr.select.with_index do |song, idx|
@@ -54,7 +54,7 @@ def run(songs)
       when "list"
         list(song_list)
       when "play"
-        play_song(song_list)
+        play(song_list)
       when "exit"
         return exit_jukebox
     end
