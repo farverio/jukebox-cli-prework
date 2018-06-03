@@ -62,5 +62,3 @@ def run(songs)
     puts command_response
   end
 end
-
-run(songs)
